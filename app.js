@@ -93,7 +93,7 @@ function renderAllTime(app) {
     app.appendChild(emptyMessage('No all-time data yet — run "Build all-time records" in the Sheet.'));
     return;
   }
-  const headers = ['Owner', 'Seasons', 'Wins', 'Losses', 'Ties', 'Win %', 'PF', 'PA', 'Championships', 'Playoff Appearances'];
+  const headers = ['Owner', 'Seasons', 'Wins', 'Losses', 'Ties', 'Win %', 'PF', 'PA', 'Championships', 'Playoff Appearances', 'Division Record', 'Division Win %'];
   const sorted = data.slice().sort(function (a, b) { return (b['Win %'] || 0) - (a['Win %'] || 0); });
   app.appendChild(table(headers, rowsFor(sorted, headers)));
 }
