@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>League Archive</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>League Archive</h1>
+    <nav>
+      <button class="nav-btn active" data-view="allTime">All-Time</button>
+      <button class="nav-btn" data-view="standings">Standings</button>
+      <button class="nav-btn" data-view="headToHead">Head-to-Head</button>
+      <button class="nav-btn" data-view="draft">Draft</button>
+      <button class="nav-btn" data-view="champions">Champions</button>
+    </nav>
+  </header>
+
+  <main id="app">
+    <p id="status">Loading league data&hellip;</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
